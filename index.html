@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagachok</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="body">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal__content">
+            <span class="close">&times;</span>
+            <div class="modal__wrapper">
+                <div class="modal__imgCnt">
+                    <img src="./assets/img/image1.png" alt="image1" class="modal__img">
+                </div>
+                <div class="modal__inforamtionCnt">
+                    <p class="modal__title">Опарыш белый</p>
+                    <p class="modal__cardTrue">Есть в наличии</p>
+                    <p class="modal__chooseColor">Выберите цвет:</p>
+                    <ul class="color__list">
+                        <li class="color__item">
+                            <img class="color__itemImg" src="" alt="1">
+                        </li>
+                        <li class="color__item">
+                            <img class="color__itemImg" src="" alt="2">
+                        </li>
+                        <li class="color__item">
+                            <img class="color__itemImg" src="" alt="3">
+                        </li>
+                    </ul>
+                    <div class="video__bg">
+                        <div class="video__container">
+                            <video id="video" autoplay loop muted controls preload="none">
+                                <source class="sourceVideo" src="" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p class="modal__textInfo">информация о наживке:</p>
+                    <p class="modal__decription">Опарыш белый представляет собой универсальную наживку в виде личинки огромной мясной мухи. По своей сути это обычный опарыш, один из самых известных и широко используемых наживок для ловли хищников и рыб ...</p>
+                    <button class="modal__decriptiontn">Развернуть</button>
+                    <p class="modal__useTitle">также используется для:</p>
+                    <ul class="use__list">
+                        <li class="use__item">
+                            кормления аквариумных рыб,
+                        </li>
+                        <li class="use__item">
+                            домашних питомцев и птиц,
+                        </li>
+                        <li class="use__item">
+                            в медицине для удаления мертвых тканей и т.д.
+                        </li>
+                    </ul>
+                    <p class="modal__price">Цена от 300 грн</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <header id="home">
+        <div class="header__cnt">
+            <div class="header__cntText">
+                <p class="header__text">Оптовая торговля наживками</p>
+                <p class="header__text header__text-desctop">Качественная наживка</p>
+            </div>
+        </div>
+        <nav>
+            <div class="nav__cnt">
+                <a href="#home">
+                    <svg class="nav__logo">
+                        <use href="./assets/svg/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <!--   <label class="switch">
+                    <input id="switcher" type="checkbox">
+                    <span class="slider round">
+                        <img class="slider__mode" src="./assets/img/sun.png" alt="sun">
+                    </span>
+                </label> -->
+
+                <!--BUTTON_MOBILE_NAVIGATION-->
+                <div id="menu-togle" class="menu-icon">
+                    <div class="menu-icon-line"></div>
+                </div>
+                <!--==========================-->
+                <!--MOBILE_NAVIGATION-->
+                <ul id="mobile-nav" class="list-mobile">
+                    <li class="item-mobile">
+                        <a href="#about__us" class="link-mobile">О нас</a>
+                    </li>
+                    <li class="item-mobile">
+                        <a href="#delivery" class="link-mobile">Заказ/доставка</a>
+                    </li>
+                    <li class="item-mobile">
+                        <a href="#price__list" class="link-mobile">Прайс-лист</a>
+                    </li>
+                    <li class="item-mobile">
+                        <a href="#useful__articles" class="link-mobile">Полезные статьи</a>
+                    </li>
+                    <li class="item-mobile">
+                        <a href="#news" class="link-mobile">Новости</a>
+                    </li>
+                    <li class="item-mobile">
+                        <a href="#contacts" class="link-mobile">Контакты</a>
+                    </li>
+                    <li class="item-mobile item-mobile-margin">
+                        <a href="tel:+38 (044) 359-03-05" class="link-mobile">+38 (044) 359-03-05</a>
+                    </li>
+                    <li class="item-mobile">
+                        <div class="itemBtn__Cnt">
+                            <a href="#contacts" class="header__link header__link-mobile">Заказать</a>
+                            <a href="###" class="header__link header__link-mobile">
+                                <img class="header__linkIcon" src="./assets/svg/viber.svg" alt="viber">
+                                <p>Написать</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!--==========================-->
+                <ul class="nav__listDesctop">
+                    <li class="nav__itemDesctop">
+                        <a href="#about__us" class="nav__linkDesctop">О нас</a>
+                    </li>
+                    <li class="nav__itemDesctop">
+                        <a href="#delivery" class="nav__linkDesctop">Заказ/доставка</a>
+                    </li>
+                    <li class="nav__itemDesctop">
+                        <a href="#price__list" class="nav__linkDesctop">Прайс-лист</a>
+                    </li>
+                    <li class="nav__itemDesctop">
+                        <a href="#useful__articles" class="nav__linkDesctop">Полезные статьи</a>
+                    </li>
+                    <li class="nav__itemDesctop">
+                        <a href="#news" class="nav__linkDesctop">Новости</a>
+                    </li>
+                    <li class="nav__itemDesctop">
+                        <a href="#contacts" class="nav__linkDesctop">Контакты</a>
+                    </li>
+                </ul>
+                <a href="tel:+38 (044) 359-03-05" class="nav__mobileDesctop">+38 (044) 359-03-05</a>
+            </div>
+        </nav>
+        <div class="header__wrapper">
+            <div class="header__conteiner">
+                <h1>Качественная наживка</h1>
+                <p class="after__title">Интернет-магазин оптовой торговли качественной наживкой</p>
+                <div class="header__btnCnt">
+                    <a href="#contacts" class="header__link">Заказать</a>
+                    <a href="###" class="header__link">
+                        <img class="header__linkIcon" src="./assets/svg/viber.svg" alt="viber">
+                        <p>Написать</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main__wrapper">
+            <ul class="main__list">
+                <li class="main__item  anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image1.png" alt="img1" class="main__img">
+                    <h4><strong>Опарыш белый «Белый Рон»</strong>
+                    </h4>
+                    <p class="main__itemText">Белый опарыш, без черных желудков, без запаха аммиака, не имеет аналогов
+                    </p>
+                    <p class="main__itemPrice">от 300 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image2.png" alt="img1" class="main__img">
+                    <h4><strong>Опарыш цветной</strong></h4>
+                    <p class="main__itemText">Опарыш красный и желтый имеет насыщенный, однотонный цвет</p>
+                    <p class="main__itemPrice">от 330 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image3.png" alt="img1" class="main__img">
+                    <h4><strong>Опарыш желтый</strong></h4>
+                    <p class="main__itemText">Опарыш желтый имеет насыщенный, однотонный цвет…</p>
+                    <p class="main__itemPrice">от 330 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image4.png" alt="img1" class="main__img">
+                    <h4><strong>Червь красный</strong></h4>
+                    <p class="main__itemText">Червь красный – универсальная наживка</p>
+                    <p class="main__itemPrice">от 450 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image5.png" alt="img1" class="main__img">
+                    <h4><strong>Пинка (белая и красная)</strong></h4>
+                    <p class="main__itemText">Пинка-мелкий опарыш</p>
+                    <p class="main__itemPrice">от 320 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image6.png" alt="img1" class="main__img">
+                    <h4><strong>Мотыль насадочный</strong></h4>
+                    <p class="main__itemText">Мотыль мешковой, крупный</p>
+                    <p class="main__itemPrice">от 900 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <div class="noImg">
+                        <img src="./assets/img/noImg.png" alt="img1" class="main__img">
+                    </div>
+                    <h4><strong>Мотыль кормовой</strong></h4>
+                    <p class="main__itemText">Мотыль кормовой, лиманный, фасовка 0,5кг</p>
+                    <p class="main__itemPrice">от 120 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <div class="noImg">
+                        <img src="./assets/img/noImg.png" alt="img1" class="main__img">
+                    </div>
+                    <h4><strong>Дендробена (крупная и мелкая)</strong></h4>
+                    <p class="main__itemText">Фасованная и на килограммы</p>
+                    <p class="main__itemPrice">от 450 грн</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+                <li class="main__item anim-items anim__show anim-no-hide">
+                    <img src="./assets/img/image9.png" alt="img1" class="main__img">
+                    <h4><strong>Мастырка гороховая</strong></h4>
+                    <p class="main__itemText">Поставляется в качалках по 2кг</p>
+                    <p class="main__itemPrice">75грн/кг</p>
+                    <button class="main__itemBtn">Подробнее</button>
+                </li>
+            </ul>
+            <article class="about__article" id="about__us">
+                <div class="article__cnt">
+                    <h3 class="about__title anim-items anim__showTitle anim-no-hide">О нас</h3>
+                    <p class="about__text anim-items anim__showTitle anim-no-hide">Более 10 лет - это наш опыт работы с рыболовной наживкой. За это время, столкнулись с множеством трудностей по выбору, хранению и продаже различного качества наживки. Благодаря этому опыту, сейчас можем предложить лучшую наживку, доставку
+                        и сервис по работе с клиентами. Мы, эксклюзивно продаем опарыш лучшего качества, под брендом «Белый Рон». Эта наживка - результат долгих лет работы и экспериментов, благодаря чему опарыш получается наивысшего стандарта. Черви,
+                        мотыль и другая наживка имеем в наличии круглый год. Отлаженная логистика, позволяет оперативно обеспечить бесперебойные поставки рыболовной наживки в магазины. Наш клиент-это рыболовный или туристический магазин. Здесь мы придерживаемся
+                        индивидуального подхода к каждому. Поэтому конечная цена, регулируется исходя от объёмов и других факторов.</p>
+                </div>
+                <img class="about_img" src="./assets/img/news1.png" alt="">
+            </article>
+            <article class="delivery__article" id="delivery">
+                <div class="delivery__cnt">
+                    <h3 class="delivery__title anim-items anim__showTitle anim-no-hide">Заказ/доставка</h3>
+                    <p class="delivery__text anim-items anim__showTitle anim-no-hide">Сайт ориентирован на оптового покупателя, мин заказ 600грн. Для оформления заказа и уточнения цены, напишите на вайбер количество товара которое Вас интересует и город куда отправлять, либо позвоните по телефону 095 141 76 90 и (кнопка
+                        вайбера дублируем) Конечная цена, регулируется исходя от объёмов, регулярности поставок и других факторов, поэтому она может быть как выше от указаной на сайте, так и ниже. Заказы отправляем ежедневно (кроме воскресенья) с г. Киева
+                        маршрутками, автобусами из жд- и -авто вокзалов. Новой почтой отправка осуществляется в термоупаковке с генераторами льда. Доставка в магазины города Киева и пригорода - бесплатная. Для новых клиентов, отправка товара осуществляется
+                        после оплаты заказа на расчетный счет, либо наложеным платежем в отдельных случаях. </p>
+                </div>
+            </article>
+            <article class="price__wrapper" id="price__list">
+                <h3 class="about__title price__title anim-items anim__showTitle anim-no-hide">Прайс-лист всех наживок
+                </h3>
+                <ul class="price__list">
+                    <li class="price__item">
+                        <h6>Опарыш белый «Белый Рон»</h6>
+                        <p class="price__itemPr">от 300 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Опарыш цветной</h6>
+                        <p class="price__itemPr">от 330 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Червь красный</h6>
+                        <p class="price__itemPr">от 450 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Пинка (белая и красная)</h6>
+                        <p class="price__itemPr">от 320 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Мотыль насадочный</h6>
+                        <p class="price__itemPr">от 900 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Мотыль кормовой</h6>
+                        <p class="price__itemPr">от 120 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Дендробена (крупная и мелкая)</h6>
+                        <p class="price__itemPr">от 450 грн</p>
+                    </li>
+                    <li class="price__item">
+                        <h6>Мастырка гороховая</h6>
+                        <p class="price__itemPr">75 грн/кг</p>
+                    </li>
+                </ul>
+            </article>
+            <article id="useful__articles" style="filter: blur(4px);">
+                <h3 class="about__title">Полезные статьи</h3>
+                <ul class="article__list">
+                    <li class="article__item">
+                        <h5>Название статьи</h5>
+                        <img class="article__img" src="./assets/img/news2.png" alt="">
+                        <span class="article__imgDate">10.05.2021</span>
+                        <p class="article__text">Интернет-магазин «Nagachok» предлагает купить качественную наживку крупным и мелким оптом.</p>
+                    </li>
+                    <li class="article__item">
+                        <h5>Название статьи</h5>
+                        <img class="article__img" src="./assets/img/news3.png" alt="">
+                        <span class="article__imgDate">10.05.2021</span>
+                        <p class="article__text">Интернет-магазин «Nagachok» предлагает купить качественную наживку крупным и мелким оптом.</p>
+                    </li>
+                    <li class="article__item">
+                        <h5>Название статьи</h5>
+                        <img class="article__img" src="./assets/img/news4.png" alt="">
+                        <span class="article__imgDate">10.05.2021</span>
+                        <p class="article__text">Интернет-магазин «Nagachok» предлагает купить качественную наживку крупным и мелким оптом.</p>
+                    </li>
+                </ul>
+            </article>
+            <article id="news" style="filter: blur(4px);">
+                <h3 class="about__title news__title anim-items anim__showTitle anim-no-hide">Наши Новости</h3>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <span class="article__imgDate">10.05.2021</span>
+                        <h5>Название новости</h5>
+                        <p class="article__text">Интернет-магазин «Nagachok» предлагает купить качественную наживку крупным и мелким оптом. </p>
+                    </li>
+                    <li class="news__item">
+                        <span class="article__imgDate">10.05.2021</span>
+                        <h5>Название новости</h5>
+                        <p class="article__text">Интернет-магазин «Nagachok» предлагает купить качественную наживку крупным и мелким оптом. </p>
+                    </li>
+                    <li class="news__item">
+                        <span class="article__imgDate">10.05.2021</span>
+                        <h5>Название новости</h5>
+                        <p class="article__text">Интернет-магазин «Nagachok» предлагает купить качественную наживку крупным и мелким оптом. </p>
+                    </li>
+                </ul>
+            </article>
+
+        </div>
+        <div class="contacts__wrapper" id="contacts">
+            <div class="contacts__container">
+                <h3 class="about__title contacts__title">наши контакты</h3>
+                <div class="contacts__cnt">
+                    <div class="contacts__call">
+                        <p class="contacts__callText">Звоните нам</p>
+                        <a class="contacts__number" href="tel:+38 (044) 359-03-05">+38 (044) 359-03-05</a>
+                        <a class="contacts__number" href="tel:+38 (044) 359-03-05">+38 (044) 359-03-05</a>
+                    </div>
+                    <div class="contacts__write">
+                        <p class="contacts__writeText">Пишите нам</p>
+                        <a class="contacts__number" href="mailto:example@mail.com">example@mail.com</a>
+                        <div class="map__cnt">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20274.88727906437!2d30.076010493937616!3d50.56465389770989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b3af0783befe1%3A0xe4bd023d25a6266d!2z0J3QtdC80LXRiNCw0LXQstC-LCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzg1Mw!5e0!3m2!1sru!2sua!4v1628185590311!5m2!1sru!2sua"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="form__cnt">
+                        <p class="contacts__writeText form__title">Оставьте заявку и мы вам перезвоним</p>
+                        <form action="">
+                            <input type="name" placeholder="Ваше имя" required minLength="6">
+                            <input type="number" placeholder="Номер 0975001122" required minLength="6">
+                            <button type="submit" class="form__sumbit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__wrapper">
+            <a href="#home">
+                <svg class="nav__logo footer__logo">
+                    <use href="./assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <div class="footer__infoCnt">
+                <ul class="footer__socialList">
+                    <li class="footer__socialItem">
+                        <a class="footer__socialLink" href="">
+                            <svg class="social__icon">
+                                <use href="./assets/svg/sprite.svg#viber"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <span class="footer__text">© 2021 Онлайн-магазин nagachok.ua</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function() {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                if ($.support.safari) {
+                    $('body').animate({
+                        scrollTop: destination
+                    }, 1100);
+                } else {
+                    $('html').animate({
+                        scrollTop: destination
+                    }, 1100);
+                }
+                return false;
+            });
+        });
+    </script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/main.js"></script>
+    <!--     <script src="./js/swither.js"></script> -->
+</body>
+
+</html>

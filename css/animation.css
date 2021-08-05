@@ -1,0 +1,32 @@
+.anim__show {
+    transform: translate(0, -30%);
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.anim__show._active,
+._active .anim__show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.anim__showTitle {
+    transform: translate(-30%, 0%);
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.anim__showTitle._active,
+._active .anim__showTitle {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+@keyframes zoom {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

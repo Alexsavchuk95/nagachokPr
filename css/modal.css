@@ -1,0 +1,182 @@
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.8);
+    /* Black w/ opacity */
+    padding: 0px 15px;
+}
+
+
+/* Modal Content */
+
+.modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 15px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    overflow-y: scroll;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__img {
+    max-width: 150px;
+    margin: 0 auto 10px;
+    max-height: 619px;
+}
+
+.modal__title {
+    color: #181818;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.modal__cardTrue {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #57991F;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.modal__cardTrue::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url('../assets/svg/Subtract.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal__chooseColor,
+.modal__textInfo,
+.modal__useTitle {
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #181818;
+    margin-bottom: 8px;
+}
+
+.color__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.color__item {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+.color__itemImg:hover,
+.color__item:focus {
+    border: 2px solid #A28D6C;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal__decription {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #747474;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    /* Запрещаем перенос строк */
+    overflow: hidden;
+    /* Обрезаем все, что не помещается в область */
+    /* Цвет фона */
+    /* Поля вокруг текста */
+    text-overflow: ellipsis;
+    /* Добавляем многоточие */
+}
+
+.modal__decription--active {
+    white-space: unset;
+}
+
+.modal__decriptiontn {
+    background: inherit;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181818;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+.use__list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.use__item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #747474;
+}
+
+.modal__price {
+    font-size: 32px;
+    color: #181818;
+}
